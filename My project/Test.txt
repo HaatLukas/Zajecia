@@ -1,0 +1,4 @@
+<<<<<<< Updated upstream
+=======
+Siemanko, to jest nowa linijka od grafika
+>>>>>>> Stashed changes
