@@ -1,0 +1,1 @@
+warning CS1668: Invalid search path 'C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\x64' specified in 'LIB environment variable' -- 'directory does not exist'
