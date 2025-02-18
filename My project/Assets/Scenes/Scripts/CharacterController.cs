@@ -20,6 +20,13 @@ public class CharacterControllerr : MonoBehaviour
         characterController = GetComponent<CharacterController>();
     }
 
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.gameObject.tag == "PickUp")
+        {
+            hit.gameObject.GetComponent<PickUp>().Picked();
+        }
+    }
     void Update()
     {
         float x = Input.GetAxis("Horizontal");
@@ -34,6 +41,24 @@ public class CharacterControllerr : MonoBehaviour
             ))
         {
             isGrounded = true;
+            string terrainType;
+            terrainType = hit.collider.gameObject.tag; // sprawdzamy tag tego w co
+
+
+
+            switch (terrainType)
+            {
+                default: //standardowa prêdkoœæ gdy chodzimy po dowolnym terenie
+                    speed = 12;
+                    break;
+                case "Low": //prêdkoœæ gdy chodzimy po terenie spowalniaj¹cym
+                    speed = 3;
+                    break;
+                case "High": //prêdkoœæ gdy chodzimy po terenie przyspieszaj¹cym
+                    speed = 20;
+                    break;
+
+            }
         }
         else
         {
