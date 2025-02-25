@@ -8,6 +8,21 @@ public class GameManager : MonoBehaviour
     bool gamePaused = false;
     bool endGame = false;
     bool win = false;
+    public int points = 0;
+    public void AddPoints(int punkty_do_dodania)
+    {
+        points += punkty_do_dodania;
+    }
+    public void AddTime(int time_added)
+    {
+        timeToEnd += time_added;
+    }
+    public void FreezeTime(uint freeze_time)
+    {
+        CancelInvoke("Stopper");
+        InvokeRepeating("Stopper", freeze_time, 1);
+    }
+
     void Start()
     {
         if (gameManager == null)
