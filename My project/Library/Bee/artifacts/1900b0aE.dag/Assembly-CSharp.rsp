@@ -361,6 +361,7 @@
 "Assets/Scenes/Scripts/CrystalPickUp.cs"
 "Assets/Scenes/Scripts/FreezePickUp.cs"
 "Assets/Scenes/Scripts/GameManager.cs"
+"Assets/Scenes/Scripts/KeyPickUp.cs"
 "Assets/Scenes/Scripts/PickUp.cs"
 "Assets/Scripts/Portal.cs"
 "Assets/Scripts/PortalCamera.cs"

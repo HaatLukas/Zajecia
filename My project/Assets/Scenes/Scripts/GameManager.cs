@@ -9,6 +9,12 @@ public class GameManager : MonoBehaviour
     bool endGame = false;
     bool win = false;
     public int points = 0;
+    public int redKeys = 0;
+    public int greenKeys = 0;
+    public int blueKeys = 0;
+    public int goldKeys = 0;
+
+
     public void AddPoints(int punkty_do_dodania)
     {
         points += punkty_do_dodania;
@@ -21,6 +27,15 @@ public class GameManager : MonoBehaviour
     {
         CancelInvoke("Stopper");
         InvokeRepeating("Stopper", freeze_time, 1);
+    }
+
+    public void AddKey(KeyColor color)
+    {
+        if (color == KeyColor.Red)
+        {
+            redKeys = redKeys+ 1;
+            //redKeys++;
+        }
     }
 
     void Start()

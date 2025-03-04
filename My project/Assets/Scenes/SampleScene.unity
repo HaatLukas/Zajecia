@@ -192,6 +192,14 @@ PrefabInstance:
       propertyPath: material
       value: 
       objectReference: {fileID: 2100000, guid: 8e222f1c117985640a6b316305eedd29, type: 2}
+    - target: {fileID: 5604932843634083250, guid: e85becbada19b2d4090fa466343c417b, type: 3}
+      propertyPath: otherPortal
+      value: 
+      objectReference: {fileID: 614598270}
+    - target: {fileID: 5604932843634083250, guid: e85becbada19b2d4090fa466343c417b, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 1029738773}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -266,6 +274,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fb14eff3124af241b0d5423026010b9, type: 3}
+--- !u!4 &397670378 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2213648808478139918, guid: e85becbada19b2d4090fa466343c417b, type: 3}
+  m_PrefabInstance: {fileID: 305037279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &614598270 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2213648808478139918, guid: e85becbada19b2d4090fa466343c417b, type: 3}
+  m_PrefabInstance: {fileID: 1310476171}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &624356839
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -608,6 +626,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b272042c1a82c3f48901bcad156b367f, type: 3}
+--- !u!4 &1029738773 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3098309870567985573, guid: fd7996868bbf62045928c36c3e08b8e1, type: 3}
+  m_PrefabInstance: {fileID: 704608016}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1201114262 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3537197609838352921, guid: fd7996868bbf62045928c36c3e08b8e1, type: 3}
@@ -682,6 +705,14 @@ PrefabInstance:
       propertyPath: material
       value: 
       objectReference: {fileID: 2100000, guid: 540b91ab8b56c51438a68e1edd458587, type: 2}
+    - target: {fileID: 5604932843634083250, guid: e85becbada19b2d4090fa466343c417b, type: 3}
+      propertyPath: otherPortal
+      value: 
+      objectReference: {fileID: 397670378}
+    - target: {fileID: 5604932843634083250, guid: e85becbada19b2d4090fa466343c417b, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 1029738773}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -783,6 +814,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToEnd: 10
   points: 0
+  redKeys: 0
+  greenKeys: 0
+  blueKeys: 0
+  goldKeys: 0
 --- !u!4 &1499862891
 Transform:
   m_ObjectHideFlags: 0
